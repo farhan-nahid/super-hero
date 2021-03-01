@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import DeveloperContainer from './Component/Devoloper-Container/DeveloperContainer';
+import Footer from './Component/Footer/Footer';
+import Header from './Component/Header/Header';
+import Sidebar from './Component/Sidebar/Sidebar';
+  
 
 function App() {
+  const [cart, setCart] = useState([ ]);
+  
+  const  handleAddDeveloper = (player) => {
+    const newCart = [...cart , player];
+    setCart(newCart)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header></Header>
+            <main className="container ">
+              <div className="row">
+                    <DeveloperContainer handleAddDeveloper={handleAddDeveloper}></DeveloperContainer>
+                    <Sidebar cart={cart}></Sidebar>
+                </div>
+           </main>
+    <Footer></Footer>
+    </>
   );
 }
 

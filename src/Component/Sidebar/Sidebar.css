@@ -1,0 +1,25 @@
+aside {
+  border-left: 2px solid rgb(63, 0, 180);
+}
+
+.sidebar {
+  padding: 15px;
+  background: linear-gradient(45deg, #7d6969, transparent);
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #580000;
+}
+
+.bg-color {
+  margin-top: 10px;
+  background-color: #2a6dd2de;
+  color: whitesmoke;
+}
+
+.bg-color:hover {
+  color: aliceblue;
+}
