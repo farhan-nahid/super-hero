@@ -27,13 +27,42 @@ h1 {
   color: aliceblue;
 }
 
-@media (max-width: 1060px) {
+@media (min-width: 901px) {
   .sidebar-count {
-    margin-left: 0;
+    position: fixed;
+    top: 100px;
+    width: 259px;
   }
 }
-@media (max-width: 880px) {
-  .sidebar-count h1 {
-    font-size: 15px;
+@media (min-width: 768px) {
+  .sidebar-count {
+    position: fixed;
+    top: 100px;
+    width: 200px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar-count {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    height: calc(20vh - 0px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-radius: 0px;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    color: whitesmoke;
   }
 }
