@@ -1,3 +1,5 @@
-button.button-width {
-  width: 115px;
+@media (max-width: 360px) {
+  button .button-width fw-bolder fst-italic btn btn-danger {
+    margin-left: 350px;
+  }
 }

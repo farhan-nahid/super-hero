@@ -2,6 +2,9 @@ aside {
   border-left: 2px solid rgb(63, 0, 180);
 }
 
+.sidebar-count {
+  margin-left: 50px;
+}
 .sidebar {
   padding: 15px;
   background: linear-gradient(45deg, #7d6969, transparent);
@@ -22,4 +25,15 @@ h1 {
 
 .bg-color:hover {
   color: aliceblue;
+}
+
+@media (max-width: 1060px) {
+  .sidebar-count {
+    margin-left: 0;
+  }
+}
+@media (max-width: 880px) {
+  .sidebar-count h1 {
+    font-size: 15px;
+  }
 }

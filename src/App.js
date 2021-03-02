@@ -19,7 +19,7 @@ function App() {
             <main className="container ">
               <div className="row">
                     <DeveloperContainer handleAddDeveloper={handleAddDeveloper}></DeveloperContainer>
-                    <Sidebar cart={cart}></Sidebar>
+                    <Sidebar cart={cart} ></Sidebar>
                 </div>
            </main>
     <Footer></Footer>
