@@ -1,25 +1,22 @@
 import { faUsers } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
+import { Button, Navbar } from 'react-bootstrap';
 import './Header.css';
   
 
 const Header = () => {
     return (
-                 <nav className="navbar navbar-expand-lg navbar-light bg-light mb-5">
-                    <div className="container">
-                         <a className="navbar-brand fw-bolder fst-italic" href="/">
-                         <span className="text-danger">Programming-Hero</span> Team
-                          </a>
-                    <ul className="navbar-nav ">
-                         <li >
-                         <button className="button-width fw-bolder fst-italic btn btn-danger"> Log In 
-                         <span ><FontAwesomeIcon icon={faUsers} /></span></button>
-                         </li>
-                    </ul>
-               </div>
-          </nav>
+            <Navbar className="container">
+               <Navbar.Brand href="#home">Our <span className="title">HEROS</span></Navbar.Brand>
+               <Navbar.Toggle />
+               <Navbar.Collapse className="justify-content-end">
+               <Navbar.Text>
+                    <a href="#login"><Button className="btn-danger">Log In  <FontAwesomeIcon icon={faUsers} /></Button></a>
+               </Navbar.Text>
+               </Navbar.Collapse>
+      </Navbar>
+          
     )
 }         
     

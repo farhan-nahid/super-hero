@@ -1,5 +1,4 @@
-@media (max-width: 360px) {
-  button .button-width fw-bolder fst-italic btn btn-danger {
-    margin-left: 350px;
-  }
+.title {
+  font-weight: 800;
+  color: coral;
 }
